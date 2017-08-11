@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Freight;
+    src: url("fonts/FreightDispProLight-Regular.otf") format("opentype");
+}
+
+* {
+	color: #435363;
+	font-family: Freight;
+}
+
+body {
+	height: 90vh;
+	/*overflow: hidden;*/
+	width: 140vh;
+	margin: auto;
+	background-color: #f8f8f9;
+}
+
+#intro-page-image {
+	display: inline-block;
+	height: 80vh;
+	float: left;
+}
+
+#intro-page-info {
+	width: 50%;
+	vertical-align: top;
+	/*height: 50vh;*/
+	display: inline-block;
+}
+
+#intro-text-columns > .column {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+	/*height: 50vh;*/
+}
+
+#intro-text-columns {
+	text-align: left;
+}
+
+#membership-button-div {
+	width: 100%;
+	text-align: center;
+}
+
+#membership-button {
+	text-align: center;
+	margin: auto;
+}
+
+.footer > li {
+	list-style: none;
+	display: inline-block;
+}
+
+.footer {
+	text-align: center;
+}
+
+.center-me {
+	text-align: center;
+}
+
+p {
+	font-size: 1.7vh;
+	line-height: 180%;
+	letter-spacing: .8px;
+	margin-bottom: 20px;
+}
+
+hr {
+	background-color: #cccccc;
+	border-top: #f0f0f1;
+	border-left: none;
+	height: 1px;
+	text-decoration: none;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.light {
+	font-weight: 100;
+}
+
+.logo {
+	font-size: 3.7vh;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.title {
+	font-size: 4.1vh;
+}
+
+.footer-div {
+	position: relative;
+	bottom: 0;
+	width: 140vh;
+}
+
+.footer-div > *, header > * {
+	width: 95%;
+	text-align: center;
+	margin: auto;
+}
+
+.footer {
+	padding: 10px;
+	height: 23px;
+}
+
+.footer > li {
+	margin: 0 40px;
+	font-size: 1.5vh;
+}
+
+.red-line {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #ff3d32;
+	font-size: 1.5vh;
+	letter-spacing: 2px;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+}
+
+.red-line:hover {
+	padding-bottom: 4px;
+	border-bottom: 2px solid #fb948e;
+}
+
+#cover-page {
+	position: absolute;
+	background-color: white;
+	width: 100vw;
+	height: 101vh;
+	right: 0;
+	top: 0;
+	z-index: 3;
+	text-align: center;
+}
+
+#cover-page > img {
+	margin-top: 5%;
+	height: 80vh;
+}
