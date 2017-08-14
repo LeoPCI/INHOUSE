@@ -3,6 +3,12 @@
     src: url("fonts/FreightDispProLight-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Freight-strong;
+    src: url("fonts/FreightDispProBlack-Regular.otf") format("opentype");
+}
+
+
 * {
 	color: #435363;
 	font-family: Freight;
@@ -48,7 +54,7 @@ body {
 	text-align: left;
 }
 
-#membership-button-div {
+#membership-button-div, #apply-button-div {
 	width: 100%;
 	text-align: center;
 }
@@ -123,6 +129,7 @@ hr {
 .footer {
 	padding: 10px;
 	height: 23px;
+	padding-bottom: 3vw
 }
 
 .footer > li {
@@ -142,6 +149,7 @@ hr {
 	letter-spacing: 2px;
 	padding: 5px 15px;
 	margin-bottom: 20px;
+	text-decoration: none;
 }
 
 .red-line:hover {
@@ -163,4 +171,109 @@ hr {
 #cover-page > img {
 	margin-top: 15%;
 	height: 40vh;
+}
+
+/*MEMBERSHIP ONLY*/
+/*#member-page-image {
+	display: inline-block;
+	width: 15vw;
+	float: right;	
+}*/
+
+#benefits-div {
+	clear: both;
+}
+
+#benefits-div > hr {
+	width: 85%;
+}
+
+.row {
+	text-align: center;
+}
+
+.row-left {
+	margin-left: 6%;
+}
+
+.row-item {
+	display: inline-block;
+	width: 15vw;
+	vertical-align: top;
+	text-align: left;
+}
+
+#partners-div {
+	width: 85%;
+	background-color: #e5e6e6;
+	margin: auto;
+	padding-bottom: 4vw;
+}
+
+#partners-div * {
+	color: #435262;
+}
+
+#partners-div > hr {
+	width: 88%;
+}
+
+.partner-item {
+	display: inline-block;
+	/*width: 11vw;*/
+	width: 14.4%;
+	vertical-align: top;
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+	font-size: 1vw;
+	letter-spacing: .8px;
+	padding-left: 0;
+}
+
+strong {
+	font-family: Freight-strong;
+}
+
+#partners-header {
+	margin-left: 4.5vw;
+	padding-bottom: 1.5vw;
+	padding-top: 3vw;
+}
+
+#apply-button-div {
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+}
+
+#member-page-intro {
+	width: 40%;
+	vertical-align: top;
+	display: inline-block;
+	float: left;
+	margin-left: 6.5vw;
+	margin-bottom: 3vw;
+	font-size: 2.6vw;
+	line-height: 3.5vw;
+}
+
+#member-page-image {
+	display: inline-block;
+	width: 38vw;
+	float: right;
+	margin-right: 6.5vw;
+}
+
+.grey {
+	background-color: #435262;
+}
+
+.grey * {
+	color: #e5e6e6;
+}
+
+.red {
+	color: #e6453e;
 }
