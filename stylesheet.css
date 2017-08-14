@@ -9,21 +9,26 @@
 }
 
 body {
-	height: 90vh;
+	/*height: 90vh;*/
 	/*overflow: hidden;*/
-	width: 140vh;
+	/*width: 140vh;*/
+	width: 90%;
+	/*height: auto;*/
 	margin: auto;
 	background-color: #f8f8f9;
 }
 
 #intro-page-image {
 	display: inline-block;
-	height: 80vh;
+	/*height: 80vh;*/
+	height: 550px;
 	float: left;
 }
 
 #intro-page-info {
-	width: 50%;
+	/*width: 50%;*/
+	width: 500px;
+	height: 100px;
 	vertical-align: top;
 	/*height: 50vh;*/
 	display: inline-block;
@@ -65,7 +70,8 @@ body {
 }
 
 p {
-	font-size: 1.7vh;
+	/*font-size: 1.7vh;*/
+	font-size: 13px;
 	line-height: 180%;
 	letter-spacing: .8px;
 	margin-bottom: 20px;
@@ -93,13 +99,15 @@ hr {
 }
 
 .title {
-	font-size: 4.1vh;
+	/*font-size: 4.1vh;*/
+	font-size: 24px;
 }
 
 .footer-div {
 	position: relative;
 	bottom: 0;
-	width: 140vh;
+	height: 0;
+	/*width: 140vh;*/
 }
 
 .footer-div > *, header > * {
@@ -115,14 +123,16 @@ hr {
 
 .footer > li {
 	margin: 0 40px;
-	font-size: 1.5vh;
+	/*font-size: 1.5vh;*/
+	font-size: 10px;
 }
 
 .red-line {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid #ff3d32;
-	font-size: 1.5vh;
+	/*font-size: 1.5vh;*/
+	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 5px 15px;
 	margin-bottom: 10px;
@@ -145,6 +155,6 @@ hr {
 }
 
 #cover-page > img {
-	margin-top: 5%;
-	height: 80vh;
+	margin-top: 15%;
+	height: 40vh;
 }

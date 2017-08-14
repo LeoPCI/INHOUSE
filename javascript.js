@@ -16,3 +16,7 @@ $(window).scroll(function() {
 $(window).click(function() {
 	openPage();
 })
+
+$(window).keypress(function() {
+  openPage();
+})
