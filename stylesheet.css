@@ -41,6 +41,19 @@ body {
 	/*height: 10;*/
 	width: 35vw;
 	float: left;
+	position: relative;
+	top: -4vw;
+}
+
+.hide-video {
+	display: inline-block;
+	width: 40vw;
+	float: left;
+	position: relative;
+	top: -1vw;
+	overflow: hidden;
+	height: 45vw;
+
 }
 
 #intro-page-info {
@@ -410,4 +423,34 @@ input:-ms-input-placeholder {  color: #adadad !important;  }
 
 .ad-color {
 	color: #adadad;
+}
+
+
+/*MOBILE*/
+@media screen and (max-width: 800px) {
+	.intro-page-image {
+/*		display: inline-block;
+		width: 40vw;
+		float: left;
+		position: relative;
+		top: -1vw;
+		overflow: hidden;
+		height: 45vw;*/
+		float: none;
+		width: 100vw;
+
+	}
+
+	.hide-video {
+		width: 90vw;
+	}
+
+	#intro-page-info {
+/*		width: 50%;
+		vertical-align: top;
+		display: inline-block;*/
+		display: block;
+		margin: auto;
+		/*width: */
+	}
 }
