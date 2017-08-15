@@ -8,10 +8,20 @@
     src: url("fonts/FreightDispProBlack-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: Colfax;
+    src: url("fonts/Colfax-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Colfax-strong;
+    src: url("fonts/Colfax-Medium.otf") format("opentype");
+}
 
 * {
 	color: #435363;
-	font-family: Freight;
+	/*font-family: Freight;*/
+	font-family: Colfax;
 }
 
 body {
@@ -80,9 +90,9 @@ body {
 p {
 	/*font-size: 1.7vh;*/
 	/*font-size: 13px;*/
-	font-size: 1vw;
+	font-size: 0.95vw;
 	line-height: 180%;
-	letter-spacing: .8px;
+	/*letter-spacing: .8px;*/
 	margin-bottom: 20px;
 }
 
@@ -103,14 +113,14 @@ hr {
 }
 
 .logo {
-	font-size: 3.7vh;
+	font-size: 3.6vh;
 	text-align: left;
 }
 
 .title {
 	/*font-size: 4.1vh;*/
 	/*font-size: 24px;*/
-	font-size: 3.1vw;
+	font-size: 2.6vw;
 }
 
 .footer-div {
@@ -182,6 +192,7 @@ hr {
 
 #benefits-div {
 	clear: both;
+	margin-bottom: 2vw;
 }
 
 #benefits-div > hr {
@@ -239,7 +250,7 @@ strong {
 
 #partners-header {
 	margin-left: 4.5vw;
-	padding-bottom: 1.5vw;
+	padding-bottom: 1vw;
 	padding-top: 3vw;
 }
 
@@ -255,8 +266,13 @@ strong {
 	float: left;
 	margin-left: 6.5vw;
 	margin-bottom: 3vw;
-	font-size: 2.6vw;
+}
+
+#member-page-intro h1 {
+	font-family: Freight;
+	font-size: 2.8vw;
 	line-height: 3.5vw;
+	letter-spacing: 0.2vw;
 }
 
 #member-page-image {
@@ -276,4 +292,122 @@ strong {
 
 .red {
 	color: #e6453e;
+}
+
+/*APPLICATION PAGE*/
+
+#application-page-intro {
+	width: 53%;
+	vertical-align: top;
+	display: inline-block;
+	float: left;
+	margin-left: 3vw;
+	margin-bottom: 3vw;
+}
+
+#application-page-intro > h1 {
+	font-family: Freight;
+	font-size: 3.8vw;
+	line-height: 3.5vw;
+	letter-spacing: 0.2vw;
+}
+
+.membership-option h3 {
+	padding-left: 20%;
+	border-left: 1.5px solid #cccccc;
+}
+
+h3 {
+	font-size: 1.3vw;
+}
+
+.Colfax-strong {
+	font-family: Colfax-strong;
+}
+
+#application-page-image {
+	position: relative;
+	right: -55vw;
+	top: -16vw;
+	width: 80vw;
+}
+
+.hide-image {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#application-button-div, #invite-button-div {
+	text-align: center;
+	margin: 10% 0;
+}
+
+/*FORMS*/
+.form {
+	width: 95%;
+	clear: both;
+	margin: auto;
+}
+
+.form * {
+	font-family: Freight;
+}
+
+.form-item {
+	display: inline-block;
+	/*margin: 2vw;*/
+	margin: 2vw 0;
+}
+
+.form-item > input, .form-item > select {
+	border: 0.10vw solid #435363;
+	margin-right: 1.5vw;
+	font-size: 1.2vw;
+	background-color: #f8f8f9;
+	text-indent: 1vw;
+}
+
+.form-item > input {
+	height: 2.5vw;
+	width: 20vw;
+}
+
+.form-item > input:focus, .form-item > select:focus {
+	outline: none;
+}
+
+.form-item > select {
+	height: 2.8vw;
+	max-width: 13vw;
+	min-width: 10vw;
+	position: relative;
+	top: -0.1vw;
+
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+
+   background: url(img/down-arrow.png) right;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+#zip-input {
+	width: 12vw;
+}
+
+.input-title {
+	margin-bottom: 0.5vw;
+}
+
+input::-webkit-input-placeholder {color: #adadad !important;  }
+input:-moz-placeholder { /* Firefox 18- */color: #adadad !important;  }
+input::-moz-placeholder {  /* Firefox 19+ */color: #adadad !important;  }
+input:-ms-input-placeholder {  color: #adadad !important;  }
+
+.ad-color {
+	color: #adadad;
 }
