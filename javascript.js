@@ -3,7 +3,7 @@ var openPage = function() {
       top: '-100vh',
       opacity: '0',
       margin: '0px'
-    }, 900, function(){ 
+    }, 1500, function(){ 
       $('#cover-page').hide();
     });
 }
@@ -149,27 +149,63 @@ function appendSheet(array) {
 $('#SFB-button').click(function() {
   done=false
 
-  var values = [$('#invite-select').val()];
-  // $.each($('form').serializeArray(), function(i, field) {
-  //     // values[field.name] = field.value;
-  //     values.push(field.value)
+  // var values = [
+  //   $('#invite-select').val(), 
+  //   $('[name="firstName"]').val(),
+  // ];
+
+  var values = [$('#invite-select').val(), 
+  $('[name="firstName"]').val(),
+  $('[name="lastName"]').val(),
+  $('[name="dateOfBirthMonth"]').val() + "/" + $('[name="dateOfBirthDay"]').val() + "/" + $('[name="dateOfBirthYear"]').val(),
+  $('[name="mailingAddressStreet"]').val() + ", " + $('[name="mailingAddressCity"]').val() + ", " + $('[name="mailingAddressState"]').val() + " " + $('[name="mailingAddressZip"]').val()  + ", " + $('[name="mailingAddressCountry"]').val(),
+  $('[name="phone"]').val(),
+  $('[name="email1"]').val(),
+  " ",
+  $('[name="companyEmployer"]').val(),
+  $('[name="companyTitle"]').val(),
+  " ",
+  $('[name="spouseFirstName"]').val(),
+  $('[name="spouseLastName"]').val(),
+  $('[name="spouseDateOfBirthMonth"]').val(),
+  $('[name="spouseDateOfBirthMonth"]').val() + "/" + $('[name="spouseDateOfBirthDay"]').val() + "/" + $('[name="spouseDateOfBirthYear"]').val(),
+  $('[name="anniversaryMonth"]').val() + "/" + $('[name="anniversaryDay"]').val() + "/" + $('[name="anniversaryYear"]').val(),
+  " ",
+  $('[name="noProposer"]').is(':checked'),
+  $('[name="restaurantProposerName"]').val(),
+  $('[name="restaurantProposerTitle"]').val(),
+  $('[name="restaurantProposerEmail"]').val(),
+  $('[name="currentMemberProposer"]').val(),
+  " ",
+  $('[name="dietaryRestrictions"]').val(),
+  $('[name="whereSit"]').val(),
+  $('[name="serviceStyle"]').val(),
+  " ",
+  $('[name="nycPicks1"]').val() +' '+ $('[name="nycPicks2"]').val() +', '+ $('[name="nycPicks3"]').val(),
+  $('[name="nycWhy1"]').val() +' '+ $('[name="nycWhy2"]').val() +', '+ $('[name="nycWhy3"]').val(),
+  " ",
+  $('[name="locals1"]').val() +' '+ $('[name="locals2"]').val() +', '+ $('[name="locals3"]').val(),
+  $('[name="localsWhy1"]').val() +' '+ $('[name="localsWhy2"]').val() +', '+ $('[name="localsWhy3"]').val(),
+  "hfdj"
+  ];
+  // var $inputs = $('form :input');
+  // $inputs.each(function() {
+  //   values.push($(this).val());
   // });
 
-  var $inputs = $('form :input');
-  $inputs.each(function() {
-    values.push($(this).val());
-  });
-
   console.log(values)
-  setTimeout(doSomething, 100);
+  console.log(values[0])
+  appendSheet(values);
 
-  function doSomething() {
-    if (values[1]!="") {
-      console.log(values[0])
-      appendSheet(values);
-      window.location = 'https://leopci.github.io/INHOUSE/membership.html'
-    };
-  }
+  // setTimeout(doSomething, 100);
+
+  // function doSomething() {
+  //   if (values[1]!="") {
+  //     console.log(values[0])
+  //     appendSheet(values);
+  //     // window.location = 'https://leopci.github.io/INHOUSE/membership.html'
+  //   };
+  // }
 
   // appendSheet(["values",'aaa']);
   return false
