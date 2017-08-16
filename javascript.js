@@ -167,7 +167,7 @@ $('#SFB-button').click(function() {
     if (values[1]!="") {
       console.log(values[0])
       appendSheet(values);
-      window.location = 'http://localhost:8080/index.html'
+      window.location = 'https://leopci.github.io/INHOUSE/membership.html'
     };
   }
 
