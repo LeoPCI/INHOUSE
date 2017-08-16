@@ -34,33 +34,39 @@ $('#invite-code').click(function(){
 });
 
 $('#get-form').click(function(){
-  if ($('#invite-select').val()=="") {
-    $('#form-1').load("form-1.html"); 
-    $('#form-2').load("form-2.html");
-    $('#form-3').load("form-3.html");
-  }
 
   if ($('#invite-select').val()=="F&F") {
     $('#form-1').load("form-1.html"); 
     $('#form-2').load("form-2.html");
     $('#form-3').load("form-3.html");
-  };
+    $('#price').html("<span class='striked'>$1,525</span><br>$750");
+  }
 
-  if ($('#invite-select').val()=="PULLUPACHAIR") {
+  else if ($('#invite-select').val()=="PULLUPACHAIR") {
     $('#form-1').load("form-1.html"); 
     $('#form-2').load("form-2.html");
     $('#form-3').load("form-3.html");
-  };
+    $('#price').html("<span class='striked'>$1,525</span><br>$1,250");
+  }
 
-  if ($('#invite-select').val()=="WELCOMEHOME") {
+  else if ($('#invite-select').val()=="WELCOMEHOME") {
     $('#form-1').load("form-1.html"); 
     $('#form-3').load("form-3.html");
-  };
+    $('#price').html("<span class='striked'>$1,525</span><br>$750");
+  }
 
-  if ($('#invite-select').val()=="FRIENDOFTHEHOUSE") {
+  else if ($('#invite-select').val()=="FRIENDOFTHEHOUSE") {
     $('#form-1').load("form-1.html"); 
     $('#form-3').load("form-3.html");
-  };
+    $('#price').html("<span class='striked'>$1,525</span><br>$1,250");
+  }
+
+  else {
+    $('#form-1').load("form-1.html"); 
+    $('#form-2').load("form-2.html");
+    $('#form-3').load("form-3.html");
+    $('#price').html("$1,525");
+  }
 
   $('#submit-form-button').show();
 })
@@ -143,7 +149,7 @@ function appendSheet(array) {
 $('#SFB-button').click(function() {
   done=false
 
-  var values = [];
+  var values = [$('#invite-select').val()];
   // $.each($('form').serializeArray(), function(i, field) {
   //     // values[field.name] = field.value;
   //     values.push(field.value)
@@ -158,9 +164,10 @@ $('#SFB-button').click(function() {
   setTimeout(doSomething, 100);
 
   function doSomething() {
-    if (values[0]!="") {
+    if (values[1]!="") {
       console.log(values[0])
       appendSheet(values);
+      window.location = 'http://localhost:8080/index.html'
     };
   }
 

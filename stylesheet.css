@@ -483,6 +483,11 @@ select.long-minus {
 	margin: auto;
 }
 
+.striked {
+	color: red;
+	text-decoration: line-through;
+}
+
 /*MOBILE*/
 @media screen and (max-width: 800px) {
 	.intro-page-image {
