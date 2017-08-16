@@ -10,8 +10,9 @@
 
   	<header>
   		<div>
-  			<h1>
+  			<a href="./index.html"><h1 class="light logo">INHOUSE</h1></a>
   		</div>
+  		<hr>
 	</header>
   	
   	<div class="center-me">
@@ -41,8 +42,9 @@
 			  				</h3>
 			  			</div>
 
-			  			<div id="application-button-div"><a href="/INHOUSE/membership.html" class="red-line">MEMBER APPLICATION FORM</a></div>
-			  			<div id="invite-button-div"><a href="/INHOUSE/membership.html" class="red-line">INVITE CODE</a></div>
+			  			<div id="application-button-div"><button id="get-form" href="/INHOUSE/membership.html" class="red-line">MEMBER APPLICATION FORM</button></div>
+			  			<div id="invite-button-div"><button href="/INHOUSE/membership.html" class="red-line" id="invite-code">INVITE CODE</button><input id="invite-select"></div>
+			  			
 			  		</div>
 			</div>
 
@@ -51,7 +53,12 @@
   	</div>
 
   	<div class="form">
-
+  		<form>
+  			<span id="form-1"></span>
+  			<span id="form-2"></span>
+  			<span id="form-3"></span>
+  		</form>
+		<div id="submit-form-button" class='center-me' style="display:none"><button id="SFB-button" class='red-line'>SUBMIT</button></div>
   	</div>
 	  	 
 
@@ -67,9 +74,10 @@
   </body>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="javascript.js"></script>
-    <script> 
-    $(function(){
-      $(".form").load("form-1.html"); 
-    });
-    </script> 
+
+
+<script async defer src="https://apis.google.com/js/api.js"
+  onload="this.onload=function(){};handleClientLoad()"
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
 </html>
