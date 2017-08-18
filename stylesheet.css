@@ -113,6 +113,10 @@ a {
 	text-align: center;
 }
 
+.full-contents {
+	min-height: 92vh;
+}
+
 p {
 	/*font-size: 1.7vh;*/
 	/*font-size: 13px;*/
@@ -128,6 +132,10 @@ hr {
 	border-left: none;
 	height: 1px;
 	text-decoration: none;
+}
+
+header > hr {
+	margin-bottom: 3vw;
 }
 
 .text-left {
@@ -165,9 +173,10 @@ hr {
 }
 
 .footer {
-	padding: 10px;
+	/*padding: 10px;*/
 	height: 23px;
-	padding-bottom: 3vw
+	padding-bottom: 1em;
+	padding-top: 1.3em;
 }
 
 .footer > li {
@@ -211,12 +220,16 @@ hr {
 	height: 20vh;
 }
 
+
 /*MEMBERSHIP ONLY*/
-/*#member-page-image {
-	display: inline-block;
-	width: 15vw;
-	float: right;	
-}*/
+
+.hover-show {
+	cursor: pointer;
+}
+
+.hover-show-div p {
+	padding: 3vw;
+}
 
 #benefits-div {
 	clear: both;
@@ -363,6 +376,7 @@ h3 {
 .hide-image {
 	position: absolute;
 	width: 100%;
+	max-height: 50vw;
 	left: 0;
 	overflow: hidden;
 	z-index: -1;
@@ -481,6 +495,9 @@ select.long-minus {
 #invite-select {
 	display: none;
 	margin: auto;
+	width: 30em;
+	font-size: 0.7em;
+	text-align: center;
 }
 
 .striked {
@@ -488,19 +505,86 @@ select.long-minus {
 	text-decoration: line-through;
 }
 
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+    font-size: 1.2em;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+/*PREVENT EXTRA LARGE TEXT WHEN EXPANDED*/
+@media screen and (min-width: 1450px) {
+
+	.full-contents {
+		max-height: 50em;
+	}
+
+	#intro-page-image {
+		max-width: 500px;
+	}
+
+	.hide-video {
+		width: 500px;
+		float: none;
+		margin-right: 5em;
+		margin-top: 8%;
+	}
+
+	#intro-page-info {
+		max-width: 31em;
+		margin-top: 8%;
+	}
+
+	#intro-page-info p {
+		font-size: 0.9em;
+	}
+
+	#intro-page-info h1 {
+		font-size: 2.2em;
+	}
+
+	.red-line {
+		font-size: 1em;
+	}
+
+	.footer {
+		padding: 0.5em;
+	}
+
+	.footer-div hr {
+		width: 72em;
+	}
+
+	.footer-div li {
+		font-size: 0.5em;
+	}
+}
+
 /*MOBILE*/
 @media screen and (max-width: 800px) {
 	.intro-page-image {
-/*		display: inline-block;
-		width: 40vw;
-		float: left;
-		position: relative;
-		top: -1vw;
-		overflow: hidden;
-		height: 45vw;*/
 		float: none;
 		width: 100vw;
-
 	}
 
 	.hide-video {
@@ -508,11 +592,7 @@ select.long-minus {
 	}
 
 	#intro-page-info {
-/*		width: 50%;
-		vertical-align: top;
-		display: inline-block;*/
 		display: block;
 		margin: auto;
-		/*width: */
 	}
 }

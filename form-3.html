@@ -5,13 +5,18 @@
 	<div class="input-title">Do you have any allergies or dietary restrictions?</div>
 	<input name="dietaryRestrictions" class="long-plus">
 </div>
-<div class="form-item long-minus">
+<!-- <div class="form-item long-minus">
 	<div class="input-title">Where do you like to sit in a restaurant?</div>
 	<select name="whereSit" class="long-minus"></select>
-</div>
+</div> -->
 <div class="form-item long-minus">
 	<div class="input-title">Your preferred style of service?</div>
-	<select name="serviceStyle" class="long-minus"></select>
+	<select name="serviceStyle" class="long-minus">
+		<option value="">PREFERRED STYLE</option>
+		<option value="I love to engage with the service team">I love to engage with the service team</option>
+		<option value="I appreciate recommendations from my server">I appreciate recommendations from my server</option>
+		<option value="A more cordial hands-off approach">A more cordial hands-off approach</option>
+	</select>
 </div>
 <div class="form-item form-question">
 	<div class="input-title">You have a friend visiting New York and they ask you to recommend 3 restaurants - 2 dinners and 1 lunch/brunch. Where do you recommend and why?</div>
@@ -19,9 +24,9 @@
 <br>
 <div class="form-item">
 	<div class="input-title">Restaurant</div>
-	<span name="nycPicks1" class="indent-number">1</span><input class="long"><br><br>
-	<span name="nycPicks2" class="indent-number">2</span><input class="long"><br><br>
-	<span name="nycPicks3" class="indent-number">3</span><input class="long"><br><br>
+	<span class="indent-number">1</span><input name="nycPicks1"  class="long"><br><br>
+	<span class="indent-number">2</span><input name="nycPicks2" class="long"><br><br>
+	<span class="indent-number">3</span><input name="nycPicks3" class="long"><br><br>
 </div>
 <div class="form-item">
 	<div class="input-title">Why?</div>
@@ -36,9 +41,9 @@
 <br>
 <div class="form-item">
 	<div class="input-title">Restaurant</div>
-	<span name="locals1" class="indent-number">1</span><input class="long"><br><br>
-	<span name="locals2" class="indent-number">2</span><input class="long"><br><br>
-	<span name="locals3" class="indent-number">3</span><input class="long"><br><br>
+	<span class="indent-number">1</span><input name="locals1" class="long"><br><br>
+	<span class="indent-number">2</span><input name="locals2" class="long"><br><br>
+	<span class="indent-number">3</span><input name="locals3" class="long"><br><br>
 </div>
 <div class="form-item">
 	<div class="input-title">Why?</div>

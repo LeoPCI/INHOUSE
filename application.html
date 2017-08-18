@@ -33,7 +33,7 @@
 
 			  			<div class="column">  
 			  				<h3><strong class="Colfax-strong">INDIVIDUAL MEMBERSHIP</strong> <br>
-			  				$1525 USD
+			  				<span id="price">$1525 USD</span>
 			  				</h3>
 			  			</div>
 			  			<div class="column membership-option">  
@@ -42,8 +42,9 @@
 			  				</h3>
 			  			</div>
 
+			  			<div id="invite-button-div"><button href="/INHOUSE/membership.html" class="red-line" id="invite-code">USE INVITE CODE</button><input id="invite-select" placeholder="Enter code here and then click 'MEMBER APPLICATION FORM'"></div>
+
 			  			<div id="application-button-div"><button id="get-form" href="/INHOUSE/membership.html" class="red-line">MEMBER APPLICATION FORM</button></div>
-			  			<div id="invite-button-div"><button href="/INHOUSE/membership.html" class="red-line" id="invite-code">INVITE CODE</button><input id="invite-select"></div>
 			  			
 			  		</div>
 			</div>
@@ -53,13 +54,20 @@
   	</div>
 
   	<div class="form">
+	  	<div id="alert-message-1" class='alert'>Please fill out every required section. Required sections are marked with a "*".  
+  		  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		</div>
+	  	<div id="alert-message-2" class='alert'>You have entered two different email addresses.
+	  	  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		</div>
+
   		<form>
   			<span id="form-1"></span>
   			<span id="form-2"></span>
   			<span id="form-3"></span>
   		</form>
 		<div id="submit-form-button" class='center-me' style="display:none">
-			<div>Price:&nbsp;<span id="price"></span></div><br>
+			<!-- <div>Price:&nbsp;<span id="price"></span></div><br> -->
 			<button id="SFB-button" class='red-line'>SUBMIT</button></div>
   	</div>
 	  	 
