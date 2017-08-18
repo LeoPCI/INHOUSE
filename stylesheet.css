@@ -229,6 +229,7 @@ header > hr {
 
 .hover-show-div p {
 	padding: 3vw;
+	min-height: 30vw;
 }
 
 #benefits-div {
@@ -581,18 +582,43 @@ select.long-minus {
 }
 
 /*MOBILE*/
-@media screen and (max-width: 800px) {
-	.intro-page-image {
-		float: none;
-		width: 100vw;
+@media screen and (max-width: 1000px) {
+	#intro-page-image {
+		/*float: none;*/
+		width: 70vw;
+		left: 20vw;
+		top: 0px;
 	}
 
 	.hide-video {
-		width: 90vw;
+		width: 70vw;
+		height: 70vw;
+		margin-bottom: 4vw;
 	}
 
 	#intro-page-info {
 		display: block;
 		margin: auto;
+		width: 80%;
+	}
+
+	#intro-page-info p {
+		font-size: 1em;
+	}
+
+	#intro-page-info h1 {
+		font-size: 2.2em;
+	}
+
+	.red-line {
+		font-size: 1em;
+	}
+
+	.footer-div {
+		padding-top: 2.5em;
+	}
+
+	.footer-div li {
+		font-size: 0.9em;
 	}
 }
