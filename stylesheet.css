@@ -18,19 +18,15 @@
     src: url("fonts/Colfax-Medium.otf") format("opentype");
 }
 
+
+/*GENERAL*/
 * {
-	/*color: #435363;*/
 	color: #2c4c69;
-	/*font-family: Freight;*/
 	font-family: Colfax;
 }
 
 body {
-	/*height: 90vh;*/
-	/*overflow: hidden;*/
-	/*width: 140vh;*/
 	width: 90%;
-	/*height: auto;*/
 	margin: auto;
 	background-color: #f8f8f9;
 }
@@ -39,6 +35,7 @@ a {
 	text-decoration: none;
 }
 
+/*INTRO PAGE*/
 .intro-page {
 	background-color: #f5f4f6;
 }
@@ -67,10 +64,7 @@ a {
 
 #intro-page-info {
 	width: 48%;
-	/*width: 500px;*/
-	/*height: 100px;*/
 	vertical-align: top;
-	/*height: 50vh;*/
 	display: inline-block;
 }
 
@@ -83,7 +77,6 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 10px;
-	/*height: 50vh;*/
 }
 
 #intro-text-columns {
@@ -118,11 +111,8 @@ a {
 }
 
 p {
-	/*font-size: 1.7vh;*/
-	/*font-size: 13px;*/
 	font-size: 0.95vw;
 	line-height: 180%;
-	/*letter-spacing: .8px;*/
 	margin-bottom: 20px;
 }
 
@@ -153,8 +143,6 @@ header > hr {
 }
 
 .title {
-	/*font-size: 4.1vh;*/
-	/*font-size: 24px;*/
 	font-size: 2.6vw;
 	font-family: Freight;
 }
@@ -163,7 +151,6 @@ header > hr {
 	position: relative;
 	bottom: 0;
 	height: 0;
-	/*width: 140vh;*/
 }
 
 .footer-div > *, header > * {
@@ -173,7 +160,6 @@ header > hr {
 }
 
 .footer {
-	/*padding: 10px;*/
 	height: 23px;
 	padding-bottom: 1em;
 	padding-top: 1.3em;
@@ -181,8 +167,6 @@ header > hr {
 
 .footer > li {
 	margin: 0 40px;
-	/*font-size: 1.5vh;*/
-	/*font-size: 10px;*/
 	font-size: .7vw;
 }
 
@@ -190,8 +174,6 @@ header > hr {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid #ff3d32;
-	/*font-size: 1.5vh;*/
-	/*font-size: 12px;*/
 	font-size: 1.1vw;
 	letter-spacing: 2px;
 	padding: 5px 15px;
@@ -221,7 +203,7 @@ header > hr {
 }
 
 
-/*MEMBERSHIP ONLY*/
+/*MEMBERSHIP PAGE*/
 
 .hover-show {
 	cursor: pointer;
@@ -336,6 +318,7 @@ strong {
 	color: #e6453e;
 }
 
+
 /*APPLICATION PAGE*/
 
 #application-page-intro {
@@ -388,7 +371,9 @@ h3 {
 	margin: 10% 0;
 }
 
+
 /*FORMS*/
+
 .form {
 	width: 95%;
 	clear: both;
@@ -401,7 +386,6 @@ h3 {
 
 .form-item {
 	display: inline-block;
-	/*margin: 2vw;*/
 	margin: 2vw 0;
 }
 
@@ -516,7 +500,7 @@ select.long-minus {
     font-size: 1.2em;
 }
 
-/* The close button */
+/* The close button for alert message box */
 .closebtn {
     margin-left: 15px;
     color: white;
@@ -583,8 +567,12 @@ select.long-minus {
 
 /*MOBILE*/
 @media screen and (max-width: 1000px) {
+
+	p {
+		font-size: 0.5em;
+	}
+
 	#intro-page-image {
-		/*float: none;*/
 		width: 70vw;
 		left: 20vw;
 		top: 0px;
@@ -596,10 +584,20 @@ select.long-minus {
 		margin-bottom: 4vw;
 	}
 
-	#intro-page-info {
+	#intro-page-info, #intro-text-columns {
 		display: block;
 		margin: auto;
 		width: 80%;
+	}
+
+	#intro-text-columns > .column {
+		width: 90%;
+	}
+
+	.membership-option {
+		position: relative;
+		right: -60%;
+		top: -6vw;
 	}
 
 	#intro-page-info p {
